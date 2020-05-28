@@ -7,14 +7,39 @@
     --grayishBlue: hsl(229, 8%, 60%)
     --veryDarkBlue: hsl(229, 31%, 21%)
 
-body
-    background: lightgray 
+body    
     font-family: 'Rubik', sans-serif
     color: var(--veryDarkBlue)
     margin: 0
     font-size: 18px
+.is-hidden
+    display: none !important
 
 .u-wrapper
     max-width: 1280px
     margin: auto
-    padding: 0 1em    
+    padding: 0 1em  
+.u-h1
+    font-size: 2em
+    font-weight: 500
+
+.u-p
+    color: var(--grayishBlue)  
+    line-height: 1.8
+
+.u-button
+    background: var(--softBlue)
+    color: #ffffff
+    padding: 1em 1em
+    font-size: .85em
+    font-weight: 500
+    border-radius: .5em
+    margin-left: .5em
+    border: none
+    cursor: pointer
+    box-shadow: 0 5px 10px -5px var(--softBlue)
+    &:first-of-type
+        margin 0
+    &.is-gray
+        background: #f7f7f7
+        color: var(--veryDarkBlue) 

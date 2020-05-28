@@ -1,5 +1,12 @@
 .hero {
-  border: 1px solid #f00;
+  text-align: center;
+  padding: 4em 0;
+}
+.hero-buttons {
+  padding-top: 1em;
+}
+.hero-image {
+  max-width: 100%;
 }
 .menu {
   visibility: hidden;
@@ -68,7 +75,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 1.5em 0;
+  padding: 1em 0;
   transition: 0.3s background;
 }
 .header-logo {
@@ -90,14 +97,43 @@
   --veryDarkBlue: #252b46;
 }
 body {
-  background: #d3d3d3;
   font-family: 'Rubik', sans-serif;
   color: var(--veryDarkBlue);
   margin: 0;
   font-size: 18px;
 }
+.is-hidden {
+  display: none !important;
+}
 .u-wrapper {
   max-width: 1280px;
   margin: auto;
   padding: 0 1em;
+}
+.u-h1 {
+  font-size: 2em;
+  font-weight: 500;
+}
+.u-p {
+  color: var(--grayishBlue);
+  line-height: 1.8;
+}
+.u-button {
+  background: var(--softBlue);
+  color: #fff;
+  padding: 1em 1em;
+  font-size: 0.85em;
+  font-weight: 500;
+  border-radius: 0.5em;
+  margin-left: 0.5em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -5px var(--softBlue);
+}
+.u-button:first-of-type {
+  margin: 0;
+}
+.u-button.is-gray {
+  background: #f7f7f7;
+  color: var(--veryDarkBlue);
 }
