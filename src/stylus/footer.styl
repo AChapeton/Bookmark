@@ -3,8 +3,11 @@
     text-align center
     padding 3em 0
     a
-        color: #ffffff
+        color: var(--lightGray)
         text-decoration none
+        letter-spacing: 1px
+        padding: 1em
+        margin-right 1em
     &-menu
         margin-top 2em
         a
@@ -23,3 +26,15 @@
             background: url('../images/icon-facebook.svg') no-repeat center
         .twitter
             background: url('../images/icon-twitter.svg') no-repeat center
+    @media screen and (min-width 1024px)
+        img
+            margin-right 1em
+        &-content
+            display flex
+            justify-content: space-between
+        &-menu
+            display flex
+            margin: 0
+        &-primary
+            display flex
+            align-items: center
